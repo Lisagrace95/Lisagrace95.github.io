@@ -15,14 +15,13 @@
 
     <p id=" "output"> </p>
 
-    <script> 
-    document.getElementById('urlForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        const input = document.getElementById('webAddress'). value;
-        document.getElementById('output').textContent = `You entered: ${input}`;
-    });
-
-    </script>
+    <script>
+        document.getElementById('urlForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          const input = document.getElementById('webAddress').value;
+          document.getElementById('output').textContent = `You entered: ${input}`;
+        });
+      </script>
 
 </body>
 </html>
