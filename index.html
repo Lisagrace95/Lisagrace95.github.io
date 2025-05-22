@@ -2,10 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Page</title>
+    <title>Enter web address</title>
 </head>
 <body>
-    <h1>HI</h1>  
-    <p>I AM TRYING</p>
+    <h1>Enter Web address</h1>  
+
+
+    <form id="urlForm">
+        <input ty[e="text" id="webAddress" placeholder="In here please" required>
+        <button type="submit"> Submit </button>
+    </form>
+
+    <p id=" "output"> </p>
+
+    <script> 
+    document.getElementById('urlForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const input = document.getElementById('webAddress'). value;
+        document.getElementById('output').textContent = `You entered: ${input}`;
+    });
+
+    </script>
+
 </body>
 </html>
