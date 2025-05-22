@@ -5,7 +5,8 @@ body {
     background-color: #ffece1;
     font-family: "Gill Sans", sans-serif;
     color: #333;
-    padding: 20px;
+    padding: 80px;
+    align-content: center;
   }
   
   h1 {
