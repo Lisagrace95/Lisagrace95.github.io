@@ -1,0 +1,20 @@
+
+/* This is a comment in CSS */
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #0066cc;
+    font-size: 2em;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
