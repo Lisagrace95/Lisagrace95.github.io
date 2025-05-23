@@ -76,26 +76,45 @@ body {
   
   input,
   label {
-    margin: 0.4rem 5px;
+    margin: 0.4rem 0;
   }
   
-  .inputBoxContainer {
+  .tiktokContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 4rem;
     
   }
   
   input {
-    width: 200px;
+    width: 100%;
+    height: auto;
+    padding: 0rem;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    font-size: 1rem;
+  
+    transition: border-color 0.2s, box-shadow 0.2s;
   }
 
-  .tikTokBoxContainer {
-     display: flex;
-    justify-content: center;
-    margin-top: 4rem;
+  #goButton {
+   
+    width: 20%;
+    height: auto;
+    padding: 0rem;
+    border: 0px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #f993eb;
+  
   }
  
+  #goButton:hover {
+    color: #ffbb50;
+    background-color: #e67dc8;
+  }
+
+
   header {
     background-color: #ffffff;
     display: block;
@@ -121,8 +140,12 @@ body {
   }
 
   main {
-    margin-top: 120px;
+    margin-top: 0;
     margin: 2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
     
   }
 
