@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<div id="header"></div>
+<script>
+  fetch('header.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('header').innerHTML = html;
+    });
+</script>
+</head>
+<body>
+
+    <div class="inputBoxContainer">
+        <label for="webAddress">Enter your web address</label>
+        <br> <br>
+    
+        <input
+          type="text"
+          id="webAddress"
+          name="webAddress"
+          required
+          minlength="0"
+          maxlength=100%
+          size="20" />
+        
+    
+        </div>
+    
+    
+        <div class="tikTokBoxContainer">
+        <div style="transform: scale(0.25); transform-origin: top center;">
+    <svg width="1080" height="1920" xmlns="http://www.w3.org/2000/svg">
+        <rect width="1080" height="1920" x="0" y="100" fill="#ffffff" />
+        <rect width="1080" height="350" x="0" y="100" fill="#041f4a" />
+        <rect width="1080" height="100" x="0" y="0" fill="#052962" />
+      </svg>
+    </div> </div>
+
+
+</body>

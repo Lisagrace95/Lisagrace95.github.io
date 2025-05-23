@@ -1,39 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+   <head>
     <meta charset="UTF-8">
-    <title>Enter web address</title>
+    <title>magicTools</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
-    <h1>Make a BG</h1>  
 
-
-    <form id="urlForm">
-        <input ty[e="text" id="webAddress" placeholder="In here please" required>
-        <button type="submit"> Submit </button>
-    </form>
-
-    <p id=" "output"> </p>
-
+    <div id="header"></div>
     <script>
-        document.getElementById('urlForm').addEventListener('submit', function(event) {
-          event.preventDefault();
-          const input = document.getElementById('webAddress').value;
-          document.getElementById('output').textContent = `You entered: ${input}`;
-          alert(`You entered: ${input}`);
-
+      fetch('header.html')
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById('header').innerHTML = html;
         });
-      </script>
+    </script>
 
-<iframe
-id="inlineFrameExample"
-title="Inline Frame Example"
-width="300"
-height="200"
-src="https://lisagrace95.github.io/">
-</iframe>
+<div class="welcomeContainer">
+    <h2> WELCOME</h2>
+     </div>
+  
 
-
+<main> 
+    
+   
+</main>
 </body>
+
 </html>

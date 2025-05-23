@@ -1,17 +1,64 @@
 
 /* This is a comment in CSS */
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'GuardianTextSans-regular';
+  src: url('Fonts/GuardianTextSans-Regular.woff2') format('woff2');
+  font-weight: 500; 
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GHGuardianHeadline';
+  src: url('Fonts/GHGuardianHeadline-Medium.woff2') format('woff2');
+  font-weight: 500; 
+  font-style: normal;
+}
+
 body {
-    background-color: #ffece1;
-    font-family: "Gill Sans", sans-serif;
-    color: #333;
-    padding: 80px;
-    align-items: center;
+    background-color: #dedede;
+    font-family: 'GHGuardianHeadline', sans-serif;
+    margin-top: 15rem;
+   
+    
   }
   
   h1 {
-    color: #c960fa;
+    color: #041f4a;
     font-size: 2em;
+    align-items: center;
+    
+  }
+
+
+  h2 {
+    color: white;
+    align-items: center;
+    font-family: "GuardianTextSans-regular", sans-serif;
+   
+  padding:0.8em;
+
+  }
+
+  .welcomeContainer {
+    text-align: center;
+    position: relative;
+    top: 5em;
+    padding: 1vw;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .welcomeContainer h2 {
+    color: white;
+    font-family: "GuardianTextSans-regular", sans-serif;
+    font-size: clamp(2rem, 15vw, 20rem); /* responsive font */
+ 
+    margin: 0;
   }
   
   p {
@@ -19,3 +66,86 @@ body {
     line-height: 1.6;
   }
   
+
+  label {
+    display: block;
+    font:
+      1rem "GuardianTextSans-regular",sans-serif;
+     
+  }
+  
+  input,
+  label {
+    margin: 0.4rem 5px;
+  }
+  
+  .inputBoxContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    
+  }
+  
+  input {
+    width: 200px;
+  }
+
+  .tikTokBoxContainer {
+     display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+ 
+  header {
+    background-color: #ffffff;
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 2rem 2rem;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box; 
+  }
+
+  header h1 a {
+    text-decoration: none;
+    color: #041f4a; /* or any color you want */
+  }
+  
+  header h1 a:hover {
+    color: #ffbb50; /* optional hover effect */
+  }
+
+  main {
+    margin-top: 120px;
+    margin: 2rem; 
+    
+  }
+
+  .nav-tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem; /* space between tabs */
+    font:
+    1rem "GuardianTextSans-regular",sans-serif;
+  }
+  
+  .nav-tabs li a {
+    color: #041f4A;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .nav-tabs li a:hover,
+  .nav-tabs li a:focus {
+    border-bottom: 2px solid #FFBB50; /* highlight on hover/focus */
+  }
