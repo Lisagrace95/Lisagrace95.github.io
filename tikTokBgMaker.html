@@ -40,11 +40,11 @@
 
           <script>
             document.addEventListener("DOMContentLoaded", () => {
-              const goBtn = document.getElementById('goBtn');
+              const goButton = document.getElementById('goBtn');
               const urlInput = document.getElementById('urlInput');
               const output = document.getElementById('output');
         
-              goBtn.addEventListener('click', async () => {
+              goButton.addEventListener('click', async () => {
                 const inputUrl = urlInput.value.trim();
                 if (!inputUrl) {
                   alert('Please enter a URL');
@@ -62,7 +62,7 @@
               });
         
               urlInput.addEventListener('keydown', e => {
-                if (e.key === 'Enter') goBtn.click();
+                if (e.key === 'Enter') goButton.click();
               });
             });
           </script>
